@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maquillaje y Belleza</title>
+
+<style>
+* { box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+body { margin: 0; background: linear-gradient(135deg, #fff0f6, #fce7f3); color: #333; }
+
+header {
+  background: linear-gradient(90deg, #d6336c, #f06595);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 10px;
+}
+
+nav {
+  background: #c2255c;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: #fcc2d7;
+  color: #6a0f3c;
+}
+
+section {
+  display: none;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 25px auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+section.active { display: block; }
+
+h2 { color: #d6336c; }
+h3 { color: #a61e4d; }
+
+.img-main {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 15px 0;
+}
+
+.card {
+  background: #fff0f6;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background: #c2255c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="https://cdn-icons-png.flaticon.com/512/3067/3067492.png" class="logo">
+  <h1>Maquillaje y Belleza</h1>
+  <p>Arte, cuidado personal y expresión</p>
+</header>
+
+<nav>
+  <button onclick="mostrar('inicio')">Inicio</button>
+  <button onclick="mostrar('importancia')">Importancia</button>
+  <button onclick="mostrar('tipos')">Tipos</button>
+  <button onclick="mostrar('proceso')">Proceso</button>
+  <button onclick="mostrar('tips')">Tips</button>
+  <button onclick="mostrar('errores')">Errores comunes</button>
+  <button onclick="mostrar('cuidados')">Cuidados</button>
+</nav>
+
+<section id="inicio" class="active">
+<h2>¿Qué es el maquillaje? 💄</h2>
+<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" class="img-main">
+<p>
+El maquillaje es una técnica estética que utiliza productos cosméticos para realzar,
+corregir o resaltar los rasgos del rostro. Además de embellecer, permite expresar la
+personalidad, creatividad y estilo de cada persona.
+</p>
+<p>
+También cumple una función de cuidado cuando se utiliza correctamente, protegiendo la piel
+y mejorando la autoestima.
+</p>
+</section>
+
+<section id="importancia">
+<h2>Importancia del maquillaje 💖</h2>
+<p>
+El maquillaje es importante porque no solo mejora la apariencia física, sino que también
+fortalece la autoestima y la confianza personal. Para muchas personas, maquillarse es una
+forma de expresión artística y emocional.
+</p>
+<p>
+Además, el uso adecuado de productos cosméticos contribuye al cuidado de la piel,
+protegiéndola de factores externos como el sol y la contaminación.
+</p>
+<p>
+Por estas razones, el maquillaje no debe verse únicamente como algo estético, sino como una
+herramienta de bienestar, higiene y expresión individual.
+</p>
+</section>
+
+<section id="tipos">
+<h2>Tipos de maquillaje 💋</h2>
+
+<div class="card">
+<h3>Maquillaje natural</h3>
+<p>Ideal para el día a día. Resalta la belleza natural con tonos suaves.</p>
+</div>
+
+<div class="card">
+<h3>Maquillaje social</h3>
+<p>Usado en eventos como fiestas o reuniones. Más definido y elegante.</p>
+</div>
+
+<div class="card">
+<h3>Maquillaje artístico</h3>
+<p>Expresión creativa con colores intensos y diseños llamativos.</p>
+</div>
+
+<div class="card">
+<h3>Maquillaje profesional</h3>
+<p>Utilizado en sesiones fotográficas, teatro y televisión.</p>
+</div>
+</section>
+
+<section id="proceso">
+<h2>Proceso básico de maquillaje 🪞</h2>
+
+<div class="card">
+<h3>1. Preparación de la piel</h3>
+<p>Limpieza, hidratación y uso de primer para una piel uniforme.</p>
+</div>
+
+<div class="card">
+<h3>2. Base y corrector</h3>
+<p>Unifican el tono de la piel y corrigen imperfecciones.</p>
+</div>
+
+<div class="card">
+<h3>3. Ojos</h3>
+<p>Sombras, delineador y máscara de pestañas para definir la mirada.</p>
+</div>
+
+<div class="card">
+<h3>4. Rubor e iluminador</h3>
+<p>Aportan color y luminosidad al rostro.</p>
+</div>
+
+<div class="card">
+<h3>5. Labios</h3>
+<p>Lápiz labial o gloss según el estilo deseado.</p>
+</div>
+</section>
+
+<section id="tips">
+<h2>Tips y recomendaciones 💡</h2>
+<ul>
+<li>Elige productos según tu tipo de piel.</li>
+<li>Lava tus brochas regularmente.</li>
+<li>Menos es más: evita el exceso de maquillaje.</li>
+<li>Usa protector solar antes del maquillaje.</li>
+<li>Desmaquíllate siempre antes de dormir.</li>
+</ul>
+</section>
+
+<section id="errores">
+<h2>Errores comunes 🚫</h2>
+<ul>
+<li>No preparar la piel antes de maquillar.</li>
+<li>Usar una base de tono incorrecto.</li>
+<li>No difuminar bien los productos.</li>
+<li>Compartir brochas o maquillaje.</li>
+<li>Dormir maquillada.</li>
+</ul>
+</section>
+
+<section id="cuidados">
+<h2>Cuidado de la piel 🧴</h2>
+<img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881" class="img-main">
+<ul>
+<li>Limpieza diaria del rostro.</li>
+<li>Hidratación adecuada.</li>
+<li>Uso de productos de calidad.</li>
+<li>Evitar maquillaje vencido.</li>
+<li>Consultar a un dermatólogo si hay irritaciones.</li>
+</ul>
+</section>
+
+<footer>
+<p>©️ 2026 Maquillaje y Belleza | Proyecto educativo</p>
+</footer>
+
+<script>
+function mostrar(id) {
+document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
